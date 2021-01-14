@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+
+block style
+    style
+        include ../static/style.css
+    
+block content
+    section#MissionSection
+      h2 Our Mission
+      .cardHolder
+        .card 
+          h3 Dance Perfection
+          .card-box
+            .card-image
+              img(src="/static/3.png", alt="")
+            .card-content
+              p Fully trained master for your assistance.
+        .card 
+          h3 Folow your passion
+          .card-box
+            .card-image
+              img(src="/static/4.png", alt="")
+            .card-content
+              p Professionally designed course at your convinience.
+        .card 
+          h3 Live your life
+          .card-box
+            .card-image
+              img(src="/static/5.png", alt="")
+            .card-content
+              p 3 months, 5 months, 8 months, all duration is worth it. It just say how far you like to go.
+
+    section#sponsorSection
+        h2 Ours Sponsors
+        #sponsorImage
+          img(src="/static/apple.png", alt="Sponsor's Image")
+          img(src="/static/microsoft.png", alt="Sponsor's Image")
+          img(src="/static/skype.png", alt="Sponsor's Image")
+          img(src="/static/hp.png", alt="Sponsor's Image")
+
